@@ -5,8 +5,11 @@ import Exercise from "../Exercise/Exercise";
 import Profile from "../Profile/Profile";
 
 const Activities = () => {
+  //data load
   const [items, setItems] = useState([]);
+  //exercise time state
   const [time, setTime] = useState([]);
+  //break time state
   const [exTime, setExTime] = useState("0");
   //active button
   const [toggleState, setToggleState] = useState(0);
@@ -45,7 +48,13 @@ const Activities = () => {
     localStorage.setItem("breakTime", JSON.stringify(t));
     localStorage.setItem("breakTab", JSON.stringify(index));
   };
-  const finished = () => {};
+  const finished = () => {
+    setTime([]);
+    setExTime("0");
+    setToggleState(0);
+    localStorage.setItem("breakTime", JSON.stringify([]));
+    localStorage.setItem("breakTab", JSON.stringify(0));
+  };
   return (
     <div className="grid lg:grid-cols-3 xl:grid-cols-6 2xl:grid-cols-8">
       <div className="2xl:col-span-6 xl:col-span-4 lg:col-span-2 sm:px-6 xl:px-20 p-5 md:py-16 bg-gray-50">

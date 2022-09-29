@@ -1,7 +1,7 @@
 import React from "react";
 import { ToastContainer, toast } from "react-toastify";
 const Exercise = (props) => {
-  const { time, exTime } = props;
+  const { time, exTime, finished } = props;
   let totalTime = 0;
   for (let i = 0; i < time.length; i++) {
     totalTime = totalTime + time[i];
@@ -24,7 +24,10 @@ const Exercise = (props) => {
         <h2 className="flex-1 text-right">{exTime} min</h2>
       </div>
       <button
-        onClick={notify}
+        onClick={() => {
+          notify();
+          finished();
+        }}
         className="bg-blue-600 w-full py-3 rounded-lg text-white mt-5 hover:bg-blue-500 focus:bg-green-600"
       >
         Activity Completed
