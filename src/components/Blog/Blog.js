@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import Qa from "../Qa/Qa";
 const Blog = () => {
   const [questions, setQuestions] = useState([]);
-  console.log(questions);
   useEffect(() => {
     fetch("qa.json")
       .then((res) => res.json())

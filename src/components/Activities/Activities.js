@@ -6,11 +6,20 @@ import Profile from "../Profile/Profile";
 
 const Activities = () => {
   const [items, setItems] = useState([]);
+  const [time, setTime] = useState([]);
+  const [exTime, setExTime] = useState("0");
   useEffect(() => {
     fetch("activity.json")
       .then((res) => res.json())
       .then((data) => setItems(data));
   }, []);
+  const addTime = (timeAm) => {
+    setTime([...time, timeAm]);
+  };
+  //Break calculation
+  const updateBreak = (t) => {
+    setExTime(t);
+  };
   return (
     <div className="grid grid-cols-4">
       <div className="col-span-3 px-20 py-16 bg-gray-50">
@@ -34,15 +43,15 @@ const Activities = () => {
         <h3 className=" my-6 text-xl capitalize">Select Today's activity</h3>
         <div className="grid grid-cols-3 gap-5 items-stretch">
           {items.map((item) => (
-            <Activity key={item.id} item={item}></Activity>
+            <Activity key={item.id} item={item} addTime={addTime}></Activity>
           ))}
         </div>
       </div>
       <div className="col-span-1 py-14 px-8 bg-blue-50">
-        <div className="h-[80vh]  sticky top-16 bg-white p-5 rounded-lg">
+        <div className="min-h-[80vh] sticky top-16 bg-white p-5 rounded-lg">
           <Profile></Profile>
-          <Break></Break>
-          <Exercise></Exercise>
+          <Break updateBreak={updateBreak}></Break>
+          <Exercise time={time} exTime={exTime}></Exercise>
         </div>
       </div>
     </div>
