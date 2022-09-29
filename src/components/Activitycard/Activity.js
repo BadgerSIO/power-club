@@ -21,10 +21,10 @@ const Activity = (props) => {
           <strong>Time Required:</strong> {time} min
         </h4>
       </div>
-      <div className="group bg-blue-600 hover:bg-green-600 w-11/12 mx-auto rounded-md active:bg-green-600 absolute bottom-5 left-1/2 -translate-x-1/2 ">
+      <div className=" bg-blue-600 hover:bg-green-600 w-11/12 mx-auto rounded-md active:bg-green-600 absolute bottom-5 left-1/2 -translate-x-1/2 ">
         <button
           onClick={() => addTime(time)}
-          className="px-5 py-3 rounded-lg text-white w-full flex items-center justify-center"
+          className="px-5 py-3 rounded-lg text-white w-full flex items-center justify-center group"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
