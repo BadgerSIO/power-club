@@ -30,7 +30,7 @@ const Profile = () => {
           </div>
         </div>
       </div>
-      <div className="weight grid grid-cols-3 justify-items-center bg-gray-100 p-4 text-center rounded-xl mt-3">
+      <div className="weight grid grid-cols-3 justify-items-center bg-gray-100 p-4 text-center rounded-xl mt-5">
         <div className="bg-gray-100">
           <h1 className="text-xl xl:text-3xl font-bold">
             75<span className="text-base"> kg</span>

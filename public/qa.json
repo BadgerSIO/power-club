@@ -12,6 +12,6 @@
   {
     "id": "03",
     "question": "5 use cases of the useEffect ReactJS hook",
-    "answer": "Running on state change: validating input field Running on state change: live filtering Running on state change: trigger animation on new array value Running on props change: update paragraph list on fetched API data update Running on props change: updating fetched API data to get BTC updated price"
+    "answer": "1. Running on state change: validating input field 2. Running on state change: live filtering 3. Running on state change: trigger animation on new array value 4. Running on props change: update paragraph list on fetched API data update 5. Running on props change: updating fetched API data to get BTC updated price"
   }
 ]

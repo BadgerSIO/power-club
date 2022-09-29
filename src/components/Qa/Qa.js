@@ -4,7 +4,7 @@ const Qa = (props) => {
   const { id, question, answer } = props.qa;
   return (
     <div>
-      <h1 className="text-xl font-semibold mt-10 mb-5">
+      <h1 className="text-xl font-semibold mt-10 mb-5 underline decoration-blue-500">
         {id}. {question}
       </h1>
       <p>{answer}</p>

@@ -52,7 +52,7 @@ const Activities = () => {
     setTime([]);
     setExTime("0");
     setToggleState(0);
-    localStorage.setItem("breakTime", JSON.stringify([]));
+    localStorage.setItem("breakTime", JSON.stringify("0"));
     localStorage.setItem("breakTab", JSON.stringify(0));
   };
   return (
