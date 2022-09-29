@@ -1,0 +1,44 @@
+[
+  {
+    "id": "01",
+    "name": "badminton",
+    "des": "Badminton is a racquet sport played using racquets to hit a shuttlecock across a net. Although it may be played with larger teams, the most common forms of the game are 'singles' and 'doubles'.",
+    "imgsrc": "https://images.pexels.com/photos/6878018/pexels-photo-6878018.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "time": 40
+  },
+  {
+    "id": "02",
+    "name": "football",
+    "des": "Football is a family of team sports that involve, to varying degrees, kicking a ball to score a goal. Unqualified, the word football normally means the form of football that is the most popular where the word is used.",
+    "imgsrc": "https://images.pexels.com/photos/8303862/pexels-photo-8303862.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "time": 60
+  },
+  {
+    "id": "03",
+    "name": "boxing",
+    "des": "Boxing is a combat sport in which two people, usually wearing protective gloves and other protective equipment such as hand wraps and mouthguards, throw punches at each other for a predetermined amount of time in a boxing ring.",
+    "imgsrc": "https://images.pexels.com/photos/6815665/pexels-photo-6815665.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "time": 30
+  },
+  {
+    "id": "04",
+    "name": "rugby",
+    "des": "Rugby union, commonly known simply as rugby, is a close-contact team sport that originated at Rugby School in the first half of the 19th century. One of the two codes of rugby football, it is based on running with the ball in hand.",
+    "imgsrc": "https://images.pexels.com/photos/8530382/pexels-photo-8530382.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "time": 50
+  },
+  {
+    "id": "05",
+    "name": "surfing",
+    "des": "Surfing is a surface water sport in which an individual, a surfer, uses a board to ride on the forward section, or face, of a moving wave of water, which usually carries the surfer towards the shore.",
+    "imgsrc": "https://images.pexels.com/photos/4398003/pexels-photo-4398003.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "time": 40
+  },
+  {
+    "id": "06",
+    "name": "Volleyball",
+    "des": "Volleyball is a team sport in which two teams of six players are separated by a net. Each team tries to score points by grounding a ball on the other team's court under organized rules.",
+    "imgsrc": "https://images.pexels.com/photos/7071027/pexels-photo-7071027.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "time": 30
+  }
+]
