@@ -3,15 +3,17 @@ import React from "react";
 const Profile = () => {
   return (
     <div>
-      <div className="flex w-11/12 mx-auto  p-3 rounded-lg">
+      <div className="lg:flex xl:w-11/12 w-full mx-auto rounded-lg">
         <img
           src="https://img.freepik.com/free-photo/red-haired-serious-young-man-blogger-looks-confidently_273609-16730.jpg?w=1380&t=st=1664389928~exp=1664390528~hmac=0939dc856a49310e93848f0d61494bd824caa9b1a2450ed12213ea8fbfa87dc3"
           alt=""
-          className="w-20 h-20 object-cover rounded-full "
+          className="w-20 h-20 object-cover rounded-full mx-auto lg:mx-0"
         />
-        <div className="nameAddress ml-3">
-          <h1 className="text-xl font-bold">Saad Ibne Omar</h1>
-          <div className="flex mt-1">
+        <div className="nameAddress ml-3 text-center">
+          <h1 className="xl:text-xl text-lg font-bold lg:text-left text-center pt-2 lg:pt-0">
+            Saad Ibne Omar
+          </h1>
+          <div className="lg:flex text-center mt-1 ">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
@@ -30,22 +32,28 @@ const Profile = () => {
       </div>
       <div className="weight grid grid-cols-3 justify-items-center bg-gray-100 p-4 text-center rounded-xl mt-3">
         <div className="bg-gray-100">
-          <h1 className="text-3xl font-bold">
+          <h1 className="text-xl xl:text-3xl font-bold">
             75<span className="text-base"> kg</span>
           </h1>
-          <h2 className="text-lg font-semibold text-gray-600">Weight</h2>
+          <h2 className="text-base xl:text-lg font-semibold text-gray-600">
+            Weight
+          </h2>
         </div>
         <div className="bg-gray-100">
-          <h1 className="text-3xl font-bold">
+          <h1 className="text-xl xl:text-3xl font-bold">
             5.11<span className="text-base"> ft</span>
           </h1>
-          <h2 className="text-lg font-semibold text-gray-600">Height</h2>
+          <h2 className="text-base xl:text-lg font-semibold text-gray-600">
+            Height
+          </h2>
         </div>
         <div className="bg-gray-100">
-          <h1 className="text-3xl font-bold">
+          <h1 className="text-xl xl:text-3xl font-bold">
             25<span className="text-base"> yr</span>
           </h1>
-          <h2 className="text-lg font-semibold text-gray-600">Age</h2>
+          <h2 className="text-base xl:text-lg font-semibold text-gray-600">
+            Age
+          </h2>
         </div>
       </div>
     </div>

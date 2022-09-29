@@ -9,12 +9,14 @@ const Activity = (props) => {
         <img
           src={imgsrc}
           alt=""
-          className="w-full group-hover:scale-110 ease-linear duration-300"
+          className="w-full lg:group-hover:scale-110 ease-linear duration-300"
         />
       </div>
       <div className="activity-info p-5 bg-white">
-        <h1 className="text-xl font-bold capitalize">Activity: {name}</h1>
-        <p className="text-base pt-3 pb-2">
+        <h1 className="text-lg md:text-xl font-bold capitalize">
+          Activity: {name}
+        </h1>
+        <p className="text-sm md:text-base pt-3 pb-2">
           <strong>About Activity:</strong> {des}
         </p>
         <h4>

@@ -46,16 +46,16 @@ const Activities = () => {
     localStorage.setItem("breakTab", JSON.stringify(index));
   };
   return (
-    <div className="grid grid-cols-4">
-      <div className="col-span-3 px-20 py-16 bg-gray-50">
-        <h2 className="text-3xl font-bold">
+    <div className="grid lg:grid-cols-3 xl:grid-cols-6 2xl:grid-cols-8">
+      <div className="2xl:col-span-6 xl:col-span-4 lg:col-span-2 sm:px-6 xl:px-20 p-5 md:py-16 bg-gray-50">
+        <h2 className="text-2xl md:text-3xl font-bold text-center sm:text-left">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
             strokeWidth={1.5}
             stroke="currentColor"
-            className="w-7 h-7 inline-block mr-3 text-blue-600"
+            className="w-7 h-7 inline-block md:mr-3 text-blue-600"
           >
             <path
               strokeLinecap="round"
@@ -65,15 +65,17 @@ const Activities = () => {
           </svg>
           Power Club
         </h2>
-        <h3 className=" my-6 text-xl capitalize">Select Today's activity</h3>
-        <div className="grid grid-cols-3 gap-5 items-stretch">
+        <h3 className="my-3 md:my-6 text-lg md:text-xl text-center sm:text-left capitalize">
+          Select Today's activity
+        </h3>
+        <div className="grid sm:grid-cols-2 2xl:grid-cols-3 gap-5 items-stretch">
           {items.map((item) => (
             <Activity key={item.id} item={item} addTime={addTime}></Activity>
           ))}
         </div>
       </div>
-      <div className="col-span-1 py-14 px-8 bg-blue-50">
-        <div className="min-h-[80vh] sticky top-16 bg-white p-5 rounded-lg">
+      <div className="2xl:col-span-2 xl:col-span-2 lg:col-span-1 py-14 px-4 xl:px-8 bg-blue-50">
+        <div className="min-h-[80vh] sticky top-16 bg-white p-4 xl:p-5 rounded-lg sm:w-[500px] lg:w-full mx-auto w-full">
           <Profile></Profile>
           <Break updateBreak={updateBreak} toggleState={toggleState}></Break>
           <Exercise time={time} exTime={exTime}></Exercise>

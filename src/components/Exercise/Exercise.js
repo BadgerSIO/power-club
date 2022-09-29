@@ -25,7 +25,7 @@ const Exercise = (props) => {
       </div>
       <button
         onClick={notify}
-        className="bg-blue-600 w-full py-3 rounded-lg text-white mt-5 hover:bg-blue-500"
+        className="bg-blue-600 w-full py-3 rounded-lg text-white mt-5 hover:bg-blue-500 focus:bg-green-600"
       >
         Activity Completed
       </button>
