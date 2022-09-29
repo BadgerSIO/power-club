@@ -8,25 +8,25 @@ const Break = (props) => {
       <div className="weight justify-items-center bg-gray-100 p-4  rounded-xl mt-3 text-center">
         <button
           onClick={() => updateBreak(10)}
-          className="px-4 py-5 mx-2 font-semibold rounded-full bg-white hover:bg-blue-600 hover:text-white"
+          className="px-4 py-5 mx-2 font-semibold rounded-full bg-white hover:bg-blue-600 hover:text-white active:bg-green-300 focus:bg-green-600 focus:text-white"
         >
           10m
         </button>
         <button
           onClick={() => updateBreak(20)}
-          className="px-4 py-5 mx-2 font-semibold rounded-full bg-white hover:bg-blue-600 hover:text-white"
+          className="px-4 py-5 mx-2 font-semibold rounded-full bg-white hover:bg-blue-600 hover:text-white active:bg-green-300 focus:bg-green-600 focus:text-white"
         >
           20m
         </button>
         <button
           onClick={() => updateBreak(30)}
-          className="px-4 py-5 mx-2 font-semibold rounded-full bg-white hover:bg-blue-600 hover:text-white"
+          className="px-4 py-5 mx-2 font-semibold rounded-full bg-white hover:bg-blue-600 hover:text-white active:bg-green-300 focus:bg-green-600 focus:text-white"
         >
           30m
         </button>
         <button
           onClick={() => updateBreak(40)}
-          className="px-4 py-5 mx-2 font-semibold rounded-full bg-white hover:bg-blue-600 hover:text-white"
+          className="px-4 py-5 mx-2 font-semibold rounded-full bg-white hover:bg-blue-600 hover:text-white active:bg-green-300 focus:bg-green-600 focus:text-white"
         >
           40m
         </button>

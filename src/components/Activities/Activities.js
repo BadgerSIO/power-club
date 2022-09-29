@@ -13,12 +13,22 @@ const Activities = () => {
       .then((res) => res.json())
       .then((data) => setItems(data));
   }, []);
+  useEffect(() => {
+    const breakT = localStorage.getItem("breakTime");
+    let storedT = 0;
+    if (breakT) {
+      storedT = JSON.parse(breakT);
+      setExTime(storedT);
+    }
+    setExTime(storedT);
+  }, [items]);
   const addTime = (timeAm) => {
     setTime([...time, timeAm]);
   };
   //Break calculation
   const updateBreak = (t) => {
     setExTime(t);
+    localStorage.setItem("breakTime", JSON.stringify(t));
   };
   return (
     <div className="grid grid-cols-4">
