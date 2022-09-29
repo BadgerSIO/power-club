@@ -2,7 +2,6 @@ import React from "react";
 import { ToastContainer, toast } from "react-toastify";
 const Exercise = (props) => {
   const { time, exTime } = props;
-  console.log(exTime);
   let totalTime = 0;
   for (let i = 0; i < time.length; i++) {
     totalTime = totalTime + time[i];

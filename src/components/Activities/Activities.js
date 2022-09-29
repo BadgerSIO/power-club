@@ -8,11 +8,14 @@ const Activities = () => {
   const [items, setItems] = useState([]);
   const [time, setTime] = useState([]);
   const [exTime, setExTime] = useState("0");
+  //active button
+  const [toggleState, setToggleState] = useState(0);
   useEffect(() => {
     fetch("activity.json")
       .then((res) => res.json())
       .then((data) => setItems(data));
   }, []);
+  //break time set
   useEffect(() => {
     const breakT = localStorage.getItem("breakTime");
     let storedT = 0;
@@ -22,13 +25,25 @@ const Activities = () => {
     }
     setExTime(storedT);
   }, [items]);
+  //break buttons bg color
+  useEffect(() => {
+    const breakTab = localStorage.getItem("breakTab");
+    let storedTab = 0;
+    if (breakTab) {
+      storedTab = JSON.parse(breakTab);
+      setToggleState(storedTab);
+    }
+    setToggleState(storedTab);
+  }, []);
   const addTime = (timeAm) => {
     setTime([...time, timeAm]);
   };
   //Break calculation
-  const updateBreak = (t) => {
+  const updateBreak = (t, index) => {
+    setToggleState(index);
     setExTime(t);
     localStorage.setItem("breakTime", JSON.stringify(t));
+    localStorage.setItem("breakTab", JSON.stringify(index));
   };
   return (
     <div className="grid grid-cols-4">
@@ -60,7 +75,7 @@ const Activities = () => {
       <div className="col-span-1 py-14 px-8 bg-blue-50">
         <div className="min-h-[80vh] sticky top-16 bg-white p-5 rounded-lg">
           <Profile></Profile>
-          <Break updateBreak={updateBreak}></Break>
+          <Break updateBreak={updateBreak} toggleState={toggleState}></Break>
           <Exercise time={time} exTime={exTime}></Exercise>
         </div>
       </div>
