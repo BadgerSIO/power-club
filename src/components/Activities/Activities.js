@@ -45,6 +45,7 @@ const Activities = () => {
     localStorage.setItem("breakTime", JSON.stringify(t));
     localStorage.setItem("breakTab", JSON.stringify(index));
   };
+  const finished = () => {};
   return (
     <div className="grid lg:grid-cols-3 xl:grid-cols-6 2xl:grid-cols-8">
       <div className="2xl:col-span-6 xl:col-span-4 lg:col-span-2 sm:px-6 xl:px-20 p-5 md:py-16 bg-gray-50">
@@ -78,7 +79,7 @@ const Activities = () => {
         <div className="min-h-[80vh] sticky top-16 bg-white p-4 xl:p-5 rounded-lg sm:w-[500px] lg:w-full mx-auto w-full">
           <Profile></Profile>
           <Break updateBreak={updateBreak} toggleState={toggleState}></Break>
-          <Exercise time={time} exTime={exTime}></Exercise>
+          <Exercise time={time} exTime={exTime} finished={finished}></Exercise>
         </div>
       </div>
     </div>
