@@ -85,7 +85,7 @@ const Activities = () => {
         </div>
       </div>
       <div className="2xl:col-span-2 xl:col-span-2 lg:col-span-1 py-14 px-4 xl:px-8 bg-blue-50">
-        <div className="min-h-[80vh] sticky top-16 bg-white p-4 xl:p-5 rounded-lg sm:w-[500px] lg:w-full mx-auto w-full">
+        <div className="h-auto sticky top-16 bg-white p-4 xl:p-5 rounded-lg sm:w-[500px] lg:w-full mx-auto w-full">
           <Profile></Profile>
           <Break updateBreak={updateBreak} toggleState={toggleState}></Break>
           <Exercise time={time} exTime={exTime} finished={finished}></Exercise>

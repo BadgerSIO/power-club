@@ -41,7 +41,7 @@ const Profile = () => {
         </div>
         <div className="bg-gray-100">
           <h1 className="text-xl xl:text-3xl font-bold">
-            5.11<span className="text-base"> ft</span>
+            5.10<span className="text-base"> ft</span>
           </h1>
           <h2 className="text-base xl:text-lg font-semibold text-gray-600">
             Height
