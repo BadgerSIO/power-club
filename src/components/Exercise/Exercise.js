@@ -10,7 +10,9 @@ const Exercise = () => {
       <h1 className="font-bold text-xl capitalize">Exercise Details</h1>
       <div className="flex my-4 p-5 font-semibold bg-gray-100">
         <h1 className="flex-1">Exercise time</h1>
-        <h2 className="flex-1 text-right">200 min</h2>
+        <h2 className="flex-1 text-right">
+          <span>00</span> min
+        </h2>
       </div>
       <div className="flex my-4 p-5 font-semibold bg-gray-100">
         <h1 className="flex-1">Break time</h1>

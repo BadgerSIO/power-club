@@ -6,7 +6,6 @@ import Profile from "../Profile/Profile";
 
 const Activities = () => {
   const [items, setItems] = useState([]);
-  console.log(items);
   useEffect(() => {
     fetch("activity.json")
       .then((res) => res.json())
@@ -32,7 +31,7 @@ const Activities = () => {
           </svg>
           Power Club
         </h2>
-        <h3 className=" my-6 text-xl">Select Todays Exercise</h3>
+        <h3 className=" my-6 text-xl capitalize">Select Today's activity</h3>
         <div className="grid grid-cols-3 gap-5 items-stretch">
           {items.map((item) => (
             <Activity key={item.id} item={item}></Activity>
